@@ -5,7 +5,8 @@
     "main": "main.js",
     "scripts": {
         "prepare": "husky install",
-        "lint": "eslint --ext .js --ignore-path .gitignore --fix src"
+        "lint": "eslint --ext .js --ignore-path .gitignore --fix src",
+        "test:oa": "node src/project/openAccount/main.js"
     },
     "author": "ft core frontend team",
     "lint-staged": {
