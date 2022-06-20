@@ -1,18 +1,25 @@
 {
-  "name": "puppeteer-structure",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "lint": "eslint --ext .js --ignore-path .gitignore --fix src"
-  },
-  "author": "LL",
-  "license": "ISC",
-  "dependencies": {
-    "puppeteer": "^14.4.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.18.0",
-    "prettier": "^2.7.1"
-  }
+    "name": "puppeteer-structure",
+    "version": "1.0.0",
+    "description": "for ene2end test",
+    "main": "main.js",
+    "scripts": {
+        "prepare": "husky install",
+        "lint": "eslint --ext .js --ignore-path .gitignore --fix src"
+    },
+    "author": "ft core frontend team",
+    "lint-staged": {
+        "*.{js,vue}": "eslint",
+        "*.{js}": "prettier --check --ignore-unknown"
+    },
+    "dependencies": {
+        "puppeteer": "^14.4.1"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.2",
+        "@commitlint/config-conventional": "^17.0.2",
+        "eslint": "^8.18.0",
+        "husky": "^8.0.1",
+        "prettier": "^2.7.1"
+    }
 }
