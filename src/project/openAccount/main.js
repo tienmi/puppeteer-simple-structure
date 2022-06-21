@@ -1,5 +1,10 @@
-const start = require('../../core/start');
+const init = require('../../core/main');
+const home = require('../openAccount/home/home');
 
-(function () {
-    start('https://wt.franklin.com.tw:8081/openAccount/');
+(async function () {
+    const context = {
+        page: null
+    };
+    context.page = await init('https://wt.franklin.com.tw:8081/openAccount/');
+    home(context);
 })();
