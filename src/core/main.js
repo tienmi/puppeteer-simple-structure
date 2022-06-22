@@ -1,6 +1,6 @@
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
 
-module.exports = async (url, config = { headless: false, slowMo: 250 }) => {
+export default async (url, config = { headless: false, slowMo: 250 }) => {
     const browser = await puppeteer.launch(config);
     const page = await browser.newPage();
     await page.goto(url);

@@ -2,13 +2,13 @@
     "name": "puppeteer-structure",
     "version": "1.0.0",
     "description": "for ene2end test",
-    "main": "main.js",
     "scripts": {
         "prepare": "husky install",
         "lint": "eslint --ext .js --ignore-path .gitignore --fix src",
         "test:oa": "node src/project/openAccount/main.js"
     },
     "author": "ft core frontend team",
+    "type": "module",
     "lint-staged": {
         "*.{js,vue}": "eslint",
         "*.{js}": "prettier --check --ignore-unknown"

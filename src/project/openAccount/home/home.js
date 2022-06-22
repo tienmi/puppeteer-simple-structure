@@ -1,3 +1,3 @@
-module.exports = async function ({ page }) {
-    await page.type('#idNumber', 'F222222222');
-};
+export default async function ({ page }) {
+    await page.type('[data-vv-name="ID"', 'F222222222');
+}

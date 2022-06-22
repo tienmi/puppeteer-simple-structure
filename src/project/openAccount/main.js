@@ -1,5 +1,5 @@
-const init = require('../../core/main');
-const home = require('../openAccount/home/home');
+import init from '../../core/main.js';
+import home from '../openAccount/home/home.js';
 
 (async function () {
     const context = {
