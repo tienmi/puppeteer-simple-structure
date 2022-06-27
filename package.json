@@ -4,8 +4,7 @@
     "description": "for ene2end test",
     "scripts": {
         "prepare": "husky install",
-        "lint": "eslint --ext .js --ignore-path .gitignore --fix src",
-        "test:oa": "node src/project/openAccount/main.js"
+        "lint": "eslint --ext .js --ignore-path .gitignore --fix src"
     },
     "author": "ft core frontend team",
     "type": "module",
