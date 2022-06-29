@@ -4,16 +4,17 @@
     "description": "for ene2end test",
     "scripts": {
         "prepare": "husky install",
-        "lint": "eslint --ext .js --ignore-path .gitignore --fix src"
+        "lint": "eslint --ext .js --ignore-path .gitignore --fix src",
+        "test": "psc"
     },
     "author": "ft core frontend team",
-    "type": "module",
     "lint-staged": {
         "*.{js,vue}": "eslint",
         "*.{js}": "prettier --check --ignore-unknown"
     },
     "dependencies": {
-        "puppeteer": "^14.4.1"
+        "puppeteer": "^14.4.1",
+        "puppeteer-simple-cli-cores": "^1.0.8"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.2",
