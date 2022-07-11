@@ -1,20 +1,24 @@
 {
     "name": "puppeteer-structure",
     "version": "1.0.0",
-    "description": "for ene2end test",
+    "description": "Simple test architecture, adding eslint and other related tools, so that you can have high maintenance",
     "scripts": {
         "prepare": "husky install",
         "lint": "eslint --ext .js --ignore-path .gitignore --fix src",
         "test": "psc"
     },
-    "author": "ft core frontend team",
+    "author": "tienmi",
     "lint-staged": {
         "*.{js,vue}": "eslint",
         "*.{js}": "prettier --check --ignore-unknown"
     },
+    "_moduleAliases": {
+        "@": "./src"
+    },
     "dependencies": {
+        "module-alias": "^2.2.2",
         "puppeteer": "^14.4.1",
-        "puppeteer-simple-cli-cores": "^1.0.10"
+        "puppeteer-simple-cli-cores": "^1.0.22"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.2",
