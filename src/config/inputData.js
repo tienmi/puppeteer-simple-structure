@@ -1,3 +1,4 @@
 module.exports = {
-    KEYWORD: 'imdb'
+    KEYWORD: 'imdb',
+    MOVIE_KEYWORD: 'Toy story'
 };

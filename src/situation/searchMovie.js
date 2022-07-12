@@ -1,5 +1,7 @@
-const search = require('@/step/search/search.js');
+const googleSearch = require('@/step/googleSearch.js');
+const imdbSearch = require('@/step/imdbSearch.js');
 
 module.exports = async function () {
-    await search();
+    await googleSearch();
+    await imdbSearch();
 };
